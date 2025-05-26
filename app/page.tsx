@@ -44,7 +44,7 @@ export default function Home() {
   };
 
   return (
-    <main className="grid h-screen w-full grid-rows-[1fr_min-content_min-content] items-center gap-4 bg-[url(/images/krenko.jpg)] bg-cover p-4">
+    <main className="grid h-screen mx-auto w-full sm:w-[390px] grid-rows-[1fr_min-content_min-content] items-center gap-4 bg-[url(/images/krenko.jpg)] bg-cover p-4">
       <Progress className="self-start" value={Math.min(goblins, 100)} />
       <CounterHelper valueTracker={valueTracker} show={showTracker} />
       <section className="relative w-full self-end rounded-md border-2 border-black bg-[url(/images/army.jpg)] bg-cover py-2 text-center">
