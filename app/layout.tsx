@@ -13,19 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'My PWA',
-  description: 'A basic PWA setup with next-pwa',
-  manifest: '/manifest.json',
-  themeColor: '#ffffff',
-  icons: {
-    icon: '/icons/icon-192x192.png',
-    apple: '/icons/icon-192x192.png',
-  },
-}
-
-
-export const viewport: Viewport = {
-  themeColor: "#000000",
+  title: "KrenkoHelper",
+  description: "Manage your Krenko deck with ease",
 };
 
 export default function RootLayout({
