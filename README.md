@@ -37,7 +37,7 @@ Once installed, it behaves just like a native app — with offline support and n
 
 ## 🧪 Development
 
-This app is built with [Next.js](https://nextjs.org/) and configured as a PWA using [next-pwa](https://github.com/shadowwalker/next-pwa).
+This app is built with [Next.js](https://nextjs.org/) and includes PWA support following the [official Next.js PWA documentation](https://nextjs.org/docs/app/building-your-application/configuring/pwa).
 
 ```bash
 npm install
