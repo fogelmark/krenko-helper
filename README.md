@@ -4,7 +4,7 @@
 
 ## 📸 App Preview
 
-![App Preview](./public/images/app-preview.png)
+<img src="./public/images/app-preview.png" alt="App Preview" width="300"/>
 
 ## 🚀 Features
 
