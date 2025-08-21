@@ -48,7 +48,11 @@ export default function Home() {
       <Progress className="self-start" value={Math.min(goblins, 100)} />
       <CounterHelper valueTracker={valueTracker} show={showTracker} />
       <section className="relative w-full self-end rounded-md border-2 border-black bg-[url(/images/army.jpg)] bg-cover py-2 text-center">
-        <h1 className="text-[72px] leading-16 text-white text-shadow-[2px_2px_2px_rgb(0_0_0_/_1)]">
+            <span
+        className="absolute inset-0 bg-[#00000099] pointer-events-none"
+        aria-hidden="true"
+      />
+        <h1 className="text-[72px] relative z-10 leading-16 text-white text-shadow-[2px_2px_2px_rgb(0_0_0_/_1)]">
           {goblins}
         </h1>
       </section>
@@ -60,7 +64,7 @@ export default function Home() {
           <Button
             feature={increment}
             image="token_4.jpg"
-            className="text-2xl -tracking-wide"
+            className="text-[21px] -tracking-wide"
           >
             spawn one
           </Button>

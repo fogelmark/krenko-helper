@@ -19,12 +19,15 @@ export default function Button({
       onClick={feature}
       style={{ backgroundImage: `url(/images/${image})` }}
       className={cn(
-        "relative w-full rounded-md border-2 border-black bg-cover bg-center px-2 py-4 text-2xl font-semibold text-white uppercase text-shadow-[1px_1px_rgb(0_0_0_/_1)]",
-        "before:absolute before:inset-0 before:rounded-md before:bg-black/30 before:opacity-0 before:transition-opacity before:duration-150 active:before:opacity-100",
+        "relative w-full rounded-md border-2 border-black bg-cover bg-center px-2 py-4 text-2xl text-white uppercase text-shadow-[1px_1px_rgb(0_0_0_/_1)]",
         className,
       )}
     >
-      {children}
+      <span
+        className="absolute inset-0 bg-[#00000099] pointer-events-none"
+        aria-hidden="true"
+      />
+      <span className="relative z-10">{children}</span>
     </button>
   );
 }
