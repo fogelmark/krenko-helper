@@ -20,7 +20,7 @@ export default function CounterHelper({
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.3 }}
           className={cn(
-            "text-center text-2xl font-medium text-white text-shadow-[1px_1px_rgb(0_0_0_/_0.9)]",
+            "text-center text-2xl text-white text-shadow-[1px_1px_rgb(0_0_0_/_0.9)]",
           )}
         >
           {valueTracker}
