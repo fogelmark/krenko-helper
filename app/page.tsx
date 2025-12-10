@@ -1,6 +1,5 @@
 "use client";
 
-import { Progress } from "@/components/ui/progress";
 import { useRef, useState } from "react";
 import Button from "./button";
 import CounterHelper from "@/components/counter-helper";
