@@ -44,15 +44,16 @@ export default function Home() {
   };
 
   return (
-    <main className="grid h-screen mx-auto w-full sm:w-[390px] grid-rows-[1fr_min-content_min-content] items-center gap-4 bg-[url(/images/krenko.jpg)] bg-cover p-4">
-      <Progress className="self-start" value={Math.min(goblins, 100)} />
+    // <main className="mx-auto grid h-screen w-full grid-rows-[1fr_min-content_min-content] items-center gap-4 bg-[url(/images/krenko.jpg)] bg-cover px-4 py-16 sm:w-[390px]">
+    <main className="mx-auto flex flex-col justify-end h-screen w-full items-center gap-4 bg-[url(/images/krenko.jpg)] bg-cover px-4 py-16 sm:w-[390px]">
+      {/* <Progress className="self-start" value={Math.min(goblins, 100)} /> */}
       <CounterHelper valueTracker={valueTracker} show={showTracker} />
       <section className="relative w-full self-end rounded-md border-2 border-black bg-[url(/images/army.jpg)] bg-cover py-2 text-center">
-            <span
-        className="absolute inset-0 bg-[#00000099] pointer-events-none"
-        aria-hidden="true"
-      />
-        <h1 className="text-[72px] relative z-10 leading-16 text-white text-shadow-[2px_2px_2px_rgb(0_0_0_/_1)]">
+        <span
+          className="pointer-events-none absolute inset-0 bg-[#00000099]"
+          aria-hidden="true"
+        />
+        <h1 className="relative z-10 text-[72px] leading-16 text-white text-shadow-[2px_2px_2px_rgb(0_0_0_/_1)]">
           {goblins}
         </h1>
       </section>
